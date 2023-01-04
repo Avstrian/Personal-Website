@@ -1,0 +1,103 @@
+@import url('./fonts.css');
+
+* {
+    font-family: 'Playfair';
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.screen-height {
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-image: url('/assets/images/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.hamburger {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.hamburger-underline {
+    border-radius: 50px;
+    height: 4px;
+    width: 15vw;
+    background-color: black;
+}
+
+.title-container {
+    padding: 0px 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#title {
+    font-size: 2.2rem;
+}
+
+@media (max-width: 300px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: flex;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 750px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: flex;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1000px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: flex;
+    }
+}
+
+@media (min-width: 1000px) {
+    .mobile-only {
+        display: none;
+    }
+
+    .desktop-only {
+        display: flex;
+    }
+}
